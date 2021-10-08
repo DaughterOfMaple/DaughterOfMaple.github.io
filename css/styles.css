@@ -1,9 +1,6 @@
 /*
 Timeline base snippet from Bootdey
 https://www.bootdey.com/snippets/view/bs4-my-experience-timeline
-
-Contact form base snippet from Bootsnipp
-https://bootsnipp.com/snippets/7nmOW
 */
 html {
   scroll-padding-top: 80px;
@@ -36,6 +33,12 @@ h1 {
   font-size: 4rem;
   text-align: center;
   font-family: 'Ephesis', cursive;
+}
+
+h2 { 
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  text-align: center;
 }
 
 hr {
@@ -90,9 +93,17 @@ hr {
 
 .card {
   padding: 10px 10px 10px 10px;
-  border: 1px solid #BFBFBF;
-  box-shadow: 0 0 5px 2px #aaaaaa;
-  /* box-shadow: 0 1px 2px #ccc, inset 0 1px 0 #fff; */
+  border-radius: 0;
+  border: 1px solid #bfbfbf;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .3),
+    inset 0 2px 2px white,
+    inset 0 -2px 2px rgba(0, 0, 0, .2),
+    inset -2px 0 2px rgba(204, 198, 197, .5),
+    inset 2px 0 2px rgba(204, 198, 197, .5);
+}
+
+.card .card-title {
+  margin-bottom: 20px;
 }
 
 .main-timeline {
@@ -262,7 +273,7 @@ hr {
 }
 
 .main-timeline .description {
-  margin-bottom: 0
+  margin-bottom: 0.5rem;
 }
 
 .main-timeline .timeline:nth-child(2n) .date-content {
@@ -359,95 +370,35 @@ hr {
   }
 }
 
-.contact-form {
-  background: #fff;
-  margin-top: 10%;
-  margin-bottom: 5%;
-  width: 70%;
-}
-
-.contact-form .form-control {
+.form-input {
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
   border-radius: 1rem;
 }
 
-.contact-image {
-  text-align: center;
-}
-
-.contact-image img {
-  border-radius: 6rem;
-  width: 11%;
-  margin-top: -3%;
-  transform: rotate(29deg);
-}
-
-.contact-form form {
-  padding: 14%;
-}
-
-.contact-form form .row {
-  margin-bottom: -7%;
-}
-
-.contact-form h3 {
-  margin-bottom: 8%;
-  margin-top: -10%;
-  text-align: center;
-  color: #0062cc;
-}
-
-.contact-form .btnContact {
-  width: 50%;
-  border: none;
-  border-radius: 1rem;
-  padding: 1.5%;
-  background: #dc3545;
-  font-weight: 600;
-  color: #fff;
-  cursor: pointer;
-}
-
-.btnContactSubmit {
-  width: 50%;
-  border-radius: 1rem;
-  padding: 1.5%;
-  color: #fff;
-  background-color: #0062cc;
-  border: none;
-  cursor: pointer;
-}
-
-/* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
   width: 100%;
-  /* Full width */
-  padding: 12px;
-  /* Some padding */
+  /* padding: 12px;
   border: 1px solid #ccc;
-  /* Gray border */
-  border-radius: 4px;
-  /* Rounded borders */
   box-sizing: border-box;
-  /* Make sure that padding and width stays in place */
   margin-top: 6px;
-  /* Add a top margin */
   margin-bottom: 16px;
-  /* Bottom margin */
-  resize: vertical
-    /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical */
 }
 
-/* Style the submit button with a specific background color etc */
 input[type=submit] {
-  background-color: #04AA6D;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #491F08;
   color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #128D03;
 }
