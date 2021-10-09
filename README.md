@@ -4,6 +4,8 @@ This is my personal site. :smiley:
 I'm using it to practice my HTML and CSS skills.  
 Stay tuned for some cool new stuff, as I learn it! :stuck_out_tongue_winking_eye:
 
+Check it out [here](https://daughterofmaple.github.io/).
+
 ## Current TODO list
 
 1. Update contact form to implement server side handling.
