@@ -10,4 +10,3 @@ Check it out [here](https://daughterofmaple.github.io/).
 
 1. Update contact form to implement server side handling.
 2. Cater for night-mode.
-3. Modify positioning of history "bubbles" to be vertically centered with associated text.
