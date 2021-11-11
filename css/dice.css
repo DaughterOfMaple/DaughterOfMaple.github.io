@@ -1,0 +1,60 @@
+/* Dice Game */
+h2 {
+  font-size: 1.5rem;
+}
+
+#dice-container {
+  text-align: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  margin-top: 1rem;
+  font-weight: bold;
+  border-color: #236dbb;
+}
+
+.btn-outline-dark {
+  color:  #236dbb;
+}
+
+.btn-outline-dark:hover {
+  background-color: inherit;
+  border-color: #91091e;
+  color:  #91091e;
+}
+
+.btn-dark {
+  background-color: #236dbb;
+  color:  #f6f6f6;
+}
+
+.btn-dark:hover {
+  background-color: #ee99a0;
+  border-color: #91091e;
+  color:  #91091e;
+}
+
+.player {
+  display: inline-block;
+  width: 30vw;
+}
+
+.player img {
+  width: 30vw;
+}
+
+@media (min-width: 600px) {
+  .player img {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+    width: 180px;
+  }
+}
+
+.footer-copyright {
+  text-align: center;
+}
