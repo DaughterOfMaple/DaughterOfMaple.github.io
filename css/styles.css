@@ -26,11 +26,6 @@ h2 {
   text-align: center;
 }
 
-hr {
-  margin: 0;
-  width: 0.8;
-}
-
 /* Containers */
 .container-fluid {
   padding-left: 5%;
@@ -355,8 +350,8 @@ hr {
 }
 
 #site-footer .hr {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
+  width: 0.8;
 }
 
 #site-footer a {
