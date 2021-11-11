@@ -7,12 +7,15 @@
   <link rel="icon" href="images/icon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Hi there, I'm Carly. I am an engineer turned web and mobile developer, based in Sydney.">
-  
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-C8HXN70DLX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
     gtag('config', 'G-C8HXN70DLX');
   </script>
@@ -24,7 +27,6 @@
 
   <!-- Font Awesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-  <!-- <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css"> -->
 
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -44,6 +46,14 @@
           <li class="nav-item"><a href="#profile" class="nav-link px-3 link-light active" aria-current="page">Carly's Profile</a></li>
           <li class="nav-item"><a href="#skills" class="nav-link px-3 link-light">Skills</a></li>
           <li class="nav-item"><a href="#history" class="nav-link px-3 link-light">History</a></li>
+          <li class="nav-item"><a href="#next" class="nav-link px-3 link-light">Ambitions</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link px-3 link-light dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cool Stuff</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="dice.html">Dice Game</a></li>
+              <li><a class="dropdown-item" href="#">Drum Kit (Coming Soon)</a></li>
+            </ul>
+          </li>
           <li class="nav-item"><a href="CMapleson_Resume.pdf" class="nav-link px-3 link-light" download>Résumé</a></li>
           <li class="nav-item"><a href="https://github.com/DaughterOfMaple" class="nav-link px-3 link-light">GitHub</a></li>
         </ul>
@@ -63,12 +73,13 @@
         <p class="first-line">I am an engineer by trade and a problem solver at heart.</p>
         <p>I worked as a mechanical design engineer for a number of years, but decided to take a break through the COVID pandemic. My partner and I took this opportunity to grow our family, which gave me the luxury of time to discover my
           true interest - software development.</p>
-        <p>Many of the skills required to successfully deliver engineering projects are equally valuable in software development. As such, I bring with me enthusiasm, energy, and an arsenal of quality tools. I have liaised with clients; communicated to audiences with different levels of understanding; defined scope, budget and program for small to medium-sized projects.</p>
+        <p>Many of the skills required to successfully deliver engineering projects are equally valuable in software development. As such, I bring with me enthusiasm, energy, and an arsenal of quality tools. I have liaised with clients; communicated
+          to audiences with different levels of understanding; defined scope, budget and program for small to medium-sized projects.</p>
         <p>From a technical perspective, I enjoy creating simple, elegant solutions to complex problems and delivering excellence. I love automation, testing and continuous improvement.
         <p>However, after working in a number of roles both in Australia and overseas, I have come to realise that the element common to all projects and roles is human connection. As such, whether the task is technical, commercial or process driven,
           my goal is to create a positive experience for the end user. As a result, I like to explore how my own task fits in the bigger picture, to ensure that my solution contributes to achieving this goal.</p>
         <p>I am now excited to learn all I can about software development and share my experiences with others.</p>
-        
+
       </div>
     </section>
 
@@ -83,7 +94,7 @@
               <div class="card-body">
                 <h5 class="card-title">Project Management</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Proven Leadership and Teamwork</h6>
-                <p class="card-text">Work together to ensure smooth project delivery.</p>
+                <p class="card-text">Collaborate for high performance and successful project delivery.</p>
               </div>
             </div>
           </div>
@@ -101,9 +112,21 @@
             <div class="card text-center h-100">
               <img class="card-img" src="images/web-development.png" alt="Web Development">
               <div class="card-body">
-                <h5 class="card-title">Web Development</h5>
-                <h6 class="card-subtitle mb-2 text-muted">HTML, CSS and Bootstrap</h6>
-                <p class="card-text">Represent people, their ideas, products and personalities. </p>
+                <h5 class="card-title">Frontend Web Development</h5>
+                <h6 class="card-subtitle mb-2 text-muted">HTML, CSS, Bootstrap, Javascript, GitHub</h6>
+                <!-- <h6 class="card-subtitle mb-2 text-muted">HTML, CSS, Bootstrap, Javascript, JQuery, React.js, GitHub</h6> -->
+                <p class="card-text">Represent people, products and personalities with smooth user interactions.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card text-center h-100">
+              <img class="card-img" src="images/database-storage.png" alt="Web Development">
+              <div class="card-body">
+                <h5 class="card-title">Backend Web Development</h5>
+                <h6 class="card-subtitle mb-2 text-muted">SQL and NoSQL Databases</h6>
+                <!-- <h6 class="card-subtitle mb-2 text-muted">Node.js, Express.js, MongoDB, Mongoose, SQL, NoSQL, RESTful APIs</h6> -->
+                <p class="card-text">Compose clean queries for backend development and connection.</p>
               </div>
             </div>
           </div>
@@ -122,18 +145,8 @@
               <img class="card-img" src="images/android-logo.png" alt="Android Logo">
               <div class="card-body">
                 <h5 class="card-title">Android App Development</h5>
-                <h6 class="card-subtitle mb-2 text-muted">C# Programming and Xamarin Forms</h6>
+                <h6 class="card-subtitle mb-2 text-muted">C#, XAML and Xamarin Forms</h6>
                 <p class="card-text">Develop elegant solutions to meet any brief.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="card text-center h-100">
-              <img class="card-img" src="images/database-storage.png" alt="Databases">
-              <div class="card-body">
-                <h5 class="card-title">Databases</h5>
-                <h6 class="card-subtitle mb-2 text-muted">SQL Queries</h6>
-                <p class="card-text">Compose clean SQL Queries that open the door to backend development.</p>
               </div>
             </div>
           </div>
@@ -256,7 +269,8 @@
               </div>
               <div class="body">
                 <p>I completed both my degrees at the University of New South Wales, with majors in Mechanical Engineering and Finance.</p>
-                <p class="last-line">Here, I learnt to read a works brief, brain-storm solutions, work with a team to develop an idea, and communicate that idea to others. Although I ran the gauntlet of mathematics, physics, ethics and design, I believe the most valuable lesson I learnt was how to think critically when presented with a problem.</p>
+                <p class="last-line">Here, I learnt to read a works brief, brain-storm solutions, work with a team to develop an idea, and communicate that idea to others. Although I ran the gauntlet of mathematics, physics, ethics and design, I
+                  believe the most valuable lesson I learnt was how to think critically when presented with a problem.</p>
               </div>
               <div class="footer d-flex flex-wrap justify-content-center">
                 <span class="timeline-skills">Engineering Design</span>
@@ -267,6 +281,16 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Next Section -->
+    <section id="next">
+      <div class="container-fluid">
+        <h1>What next?</h1>
+        <p>I must admit, I have a gentle obsession with learning new things.</p>
+        <p>In parallel with my 'official' studies, I have completed a number of programming courses on Udemy to help deepen my understanding of various topics, including OOP, clean coding, Unit Testing, C#, Swift and web development. For the most part, I must give huge thanks to Angela Yu (<a href="https://www.appbrewery.co/" title="The App Brewery">The App Brewery</a>) and Mosh Hamedani (<a href="https://codewithmosh.com/courses?affcode=146684_8qgz9mhy" title="Code with Mosh">Code with Mosh</a>) for their wonderful, in-depth courses.</p>
+        <p>At the moment, I am slowly working my way through Angela's Full Stack Web Development course and enjoying every minute of it. Upcoming topics include JQuery, Node.js, Express.js, MongoDB, Mongoose, RESTful APIs and React.js.</p>
       </div>
     </section>
   </main>
