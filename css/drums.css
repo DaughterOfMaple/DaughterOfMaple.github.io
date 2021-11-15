@@ -40,11 +40,11 @@ h2 {
 
 .key {
   position: absolute;
+  display: none;
   background-color: transparent;
   font-weight: bolder;
   font-size: 2rem;
   color: #ee99a0;
-  visibility: hidden;
 }
 
 .drum {
