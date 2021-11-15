@@ -1,3 +1,25 @@
+h2 {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  font-family: 'Lobster';
+  color: #0A1D37;
+}
+
+.instructions {
+  padding: 2%;
+  text-align: center;
+}
+
+.toggle-keys {
+  border-radius: 2rem;
+}
+
+.toggle-keys:hover {
+  background-color: #0A1D37;
+}
+
 .drum-kit {
   position: relative;
   margin: 8vh auto;
@@ -16,13 +38,27 @@
   }
 }
 
+.key {
+  position: absolute;
+  background-color: transparent;
+  font-weight: bolder;
+  font-size: 2rem;
+  color: #ee99a0;
+  visibility: hidden;
+}
+
 .drum {
   position: absolute;
-  background-color: blue;
-  color: white;
-  font-weight: bolder;
-  opacity: 0;
-  width: 100%;
+  padding: 0;
+  background-color: transparent;
+  border-width: 0;
+  color: transparent;
+}
+
+.key.w {
+  left: 27%;
+  top: 6%;
+  color: #0A1D37;
 }
 
 .crash-cymbal {
@@ -34,6 +70,12 @@
   transform: rotate(10deg);
 }
 
+.key.i {
+  right: 12%;
+  top: 4%;
+  color: #0A1D37;
+}
+
 .ride-cymbal {
   right: 0;
   width: 28%;
@@ -42,12 +84,23 @@
   transform: rotate(350deg);
 }
 
+.key.a {
+  left: 9%;
+  top: 20%;
+  color: #0A1D37;
+}
+
 .high-hats {
   left: 0;
-  top:14%;
+  top: 14%;
   width: 28%;
   height: 11%;
   border-radius: 50%;
+}
+
+.key.s {
+  left: 44.5%;
+  top: 23%;
 }
 
 .high-tom {
@@ -59,6 +112,11 @@
   transform: rotate(9deg);
 }
 
+.key.d {
+  left: 67%;
+  top: 24%;
+}
+
 .med-tom {
   left: 57%;
   top: 18%;
@@ -66,6 +124,11 @@
   height: 15%;
   border-radius: 20%;
   transform: rotate(355deg);
+}
+
+.key.j {
+  left: 35%;
+  top: 36.5%;
 }
 
 .snare {
@@ -76,12 +139,22 @@
   border-radius: 40%;
 }
 
+.key.k {
+  left: 55%;
+  bottom: 33%;
+}
+
 .bass {
   left: 41%;
   bottom: 17%;
   width: 30%;
   height: 40%;
   border-radius: 50%;
+}
+
+.key.l {
+  right: 18%;
+  bottom: 40%;
 }
 
 .floor-tom {
@@ -91,4 +164,9 @@
   height: 20%;
   border-radius: 15%;
   transform: rotate(2deg);
+}
+
+.pressed {
+  background-color: #236dbb;
+  opacity: 0.3;
 }
