@@ -1,10 +1,29 @@
+// Toggle key visibility
+var toggleBtn = document.querySelector('.toggle-keys');
+var keys = document.querySelectorAll('.key');
+
+toggleBtn.addEventListener('click', function() {
+  if (toggleBtn.innerHTML === "Show Keys") {
+    toggleBtn.innerHTML = "Hide Keys"
+    for (var i = 0; i < keys.length; i++) {
+      keys[i].style.visibility = "visible";
+    }
+  } else {
+    toggleBtn.innerHTML = "Show Keys"
+    for (var i = 0; i < keys.length; i++) {
+      keys[i].style.visibility = "hidden";
+    }
+  }
+});
+
 // Detect clicks
 var drumButtons = document.querySelectorAll('.drum');
+
 for (var i = 0; i < drumButtons.length; i++) {
   drumButtons[i].addEventListener('click', function() {
     makeSound(this.innerHTML);
     console.log(this.innerHTML);
-    // buttonAnimation(this.innerHTML);
+    buttonAnimation(this.innerHTML);
   });
 }
 
@@ -12,7 +31,7 @@ for (var i = 0; i < drumButtons.length; i++) {
 document.addEventListener('keydown', function(event) {
   makeSound(event.key);
   console.log(event.key);
-  // buttonAnimation(event.key);
+  buttonAnimation(event.key);
 });
 
 function makeSound(key) {
@@ -53,12 +72,12 @@ function makeSound(key) {
       console.log(key);
   }
 }
-//
-// function buttonAnimation(currentKey) {
-//   var activeButton = document.querySelector("." + currentKey);
-//   activeButton.classList.add("pressed");
-//
-//   setTimeout(function() {
-//     activeButton.classList.remove("pressed");
-//   })
-// }
+
+function buttonAnimation(currentKey) {
+  var activeButton = document.querySelector(".drum." + currentKey);
+  activeButton.classList.add("pressed");
+
+  setTimeout(function() {
+    activeButton.classList.remove("pressed");
+  }, 100);
+}
