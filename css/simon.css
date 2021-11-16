@@ -1,0 +1,71 @@
+body {
+  text-align: center;
+}
+
+.top-container {
+  position: relative;
+}
+
+.instructions-btn {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: #0A1D37;
+  color: white;
+  /* border-radius: 1rem; */
+}
+
+.level-title {
+  font-family: 'Audiowide', cursive;
+  font-weight: normal;
+  margin: 0;
+  padding: 3rem;
+}
+
+#modal {
+  display: none;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+.btn {
+  margin: 1rem;
+  height: 200px;
+  width: 200px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+  box-shadow: 0 0 20px 1px grey, 0 0 20px 10px #b22222 inset;
+}
+
+.green {
+  background-color: #009900;
+  box-shadow: 0 0 20px 1px grey, 0 0 20px 10px #006400 inset;
+}
+
+.blue {
+  background-color: blue;
+  box-shadow: 0 0 20px 1px grey, 0 0 20px 10px #00008b inset;
+}
+
+.yellow {
+  background-color: yellow;
+  box-shadow: 0 0 20px 1px grey, 0 0 20px 10px #ffdf00 inset;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
