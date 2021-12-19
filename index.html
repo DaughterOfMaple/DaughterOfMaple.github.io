@@ -6,7 +6,7 @@
   <title>Carly Mapleson</title>
   <link rel="icon" href="images/icon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Hi there, I'm Carly. I am an engineer turned web and mobile developer, based in Sydney.">
+  <meta name="description" content="Hi there, I'm Carly. I am a web and mobile developer based in Sydney.">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-C8HXN70DLX"></script>
@@ -36,25 +36,25 @@
 <body>
 
   <!-- Nav Bar -->
-  <nav id="navbar-scrolltarget" class="navbar navbar-expand-md navbar-dark sticky-top">
+  <nav id="navbar-scrolltarget" class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-md-center" id="navbarToggler">
-        <ul class="nav d-flex">
+        <ul class="nav navbar-nav d-flex">
           <li class="nav-item"><a href="#profile" class="nav-link px-3 link-light active" aria-current="page">Carly's Profile</a></li>
           <li class="nav-item"><a href="#skills" class="nav-link px-3 link-light">Skills</a></li>
-          <li class="nav-item"><a href="#history" class="nav-link px-3 link-light">History</a></li>
+          <li class="nav-item"><a href="#samples" class="nav-link px-3 link-light">Code Samples</a></li>
+          <li class="nav-item"><a href="#history" class="nav-link px-3 link-light">Education</a></li>
           <li class="nav-item"><a href="#next" class="nav-link px-3 link-light">Ambitions</a></li>
           <li class="nav-item"><a href="https://github.com/DaughterOfMaple" class="nav-link px-3 link-light">GitHub</a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link px-3 link-light dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cool Stuff</a>
+            <a class="nav-link px-3 link-light dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">More Examples</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <li><a class="dropdown-item" href="simon.html">Simon Game</a></li>
               <li><a class="dropdown-item" href="drums.html">Drum Kit</a></li>
               <li><a class="dropdown-item" href="dice.html">Dice Game</a></li>
-              <li><a class="dropdown-item" href="#">Calculator (Coming Soon)</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -70,8 +70,6 @@
     </div>
   </nav>
 
-
-
   <!-- Target for Nav Bar -->
   <main data-spy="scroll" data-target="#navbar-scrolltarget">
 
@@ -80,16 +78,15 @@
       <div class="container-fluid">
         <h1>Hi, I'm Carly</h1>
         <img class="profile-img" src="images/iconborder.png" alt="Profile picture">
-        <p class="first-line">I am an engineer by trade and a problem solver at heart.</p>
-        <p>I worked as a mechanical design engineer for a number of years, but decided to take a break through the COVID pandemic. My partner and I took this opportunity to grow our family, which gave me the luxury of time to discover my
-          true interest - software development.</p>
-        <p>Many of the skills required to successfully deliver engineering projects are equally valuable in software development. As such, I bring with me enthusiasm, energy, and an arsenal of quality tools. I have liaised with clients; communicated
-          to audiences with different levels of understanding; defined scope, budget and program for small to medium-sized projects.</p>
-        <p>From a technical perspective, I enjoy creating simple, elegant solutions to complex problems and delivering excellence. I love automation, testing and continuous improvement.
-        <p>However, after working in a number of roles both in Australia and overseas, I have come to realise that the element common to all projects and roles is human connection. As such, whether the task is technical, commercial or process driven,
-          my goal is to create a positive experience for the end user. As a result, I like to explore how my own task fits in the bigger picture, to ensure that my solution contributes to achieving this goal.</p>
-        <p>I am now excited to learn all I can about software development and share my experiences with others.</p>
-
+        <p class="first-line">I worked as an engineer for several years designing complex mechanical systems but decided to change career track and jump into software development. As such, I may be new to development, but bring with me enthusiasm,
+          energy, and an arsenal of quality tools honed over years working as an engineering consultant.</p>
+        <p>Many of the skills required to successfully deliver engineering projects are equally valuable in software. I have a proven track record of successful project delivery, including elements of scope definition, budget preparation and program
+          management; critical thinking, problem solving and teamwork; communication and focus on customer outcomes and experience, while maintaining best practice.</p>
+        <p>Similarly to software development, engineering involves open-ended challenges in a new or existing environment, which use modular building blocks to compose complex systems. These systems then interface with other disciplines and programs
+          to create a smooth and cohesive end product.</p>
+        <p>I am always thrilled to find and learn new programs that will help me improve efficiency and effectiveness. Previously, these included AutoCAD, Revit, Camel, BlueBeam, and the full Microsoft Office Suite; now I spend my time dabbling in
+          Sketch, Xcode, Visual Studio Code, Atom, Microsoft SQL Server, and the Chrome developer tools.</p>
+        <p>I enjoy creating simple, elegant solutions to challenging problems and delivering excellence for both the short and long term. I love automation, testing and continuous improvement.</p>
       </div>
     </section>
 
@@ -162,10 +159,67 @@
       </div>
     </section>
 
+    <!-- Code Samples -->
+    <section id="samples">
+      <div class="container-fluid">
+        <h1>Here's what I have already done</h1>
+        <div class="code-sample">
+          <div class="imgwrap">
+            <img src="images/notepad.png" alt="Notepad app home page">
+          </div>
+          <div class="sample-text">
+            <p>The Notepad app allows you to add and delete notes.</p>
+            <p>This is one of my first React apps and is where I learnt about file structure, Components, props, hooks (useState), and debugging with the Chrome developer tools.</p>
+            <p>My next step will be to add a login feature with authentication, so users can save their lists and persist data after the page is refreshed.</p>
+            <a href="https://codesandbox.io/s/notepad-0txrt?file=/public/styles.css" target="_blank">See sample code on CodeSandbox.</a>
+          </div>
+        </div>
+        <div class="code-sample image-right">
+          <div class="sample-text">
+            <p>I started building this website to learn about web development, but got carried away too early and built it with BootStrap!</p>
+            <p>Nevertheless, you can see through this code my web development journey. Beginning with a static page of pure HTML and CSS, I then added in some vanilla JavaScript, jQuery, BootStrap, and am now looking to test myself with other
+              frameworks.</p>
+            <p>Stay tuned, as I will continue to use this page as a springboard to build up new skills.</p>
+            <a href="https://github.com/DaughterOfMaple/DaughterOfMaple.github.io" target="_blank">See sample code on GitHub.</a>
+          </div>
+          <div class="imgwrap">
+            <img src="images/website_profile.png" alt="Website home page">
+          </div>
+        </div>
+        <div class="code-sample">
+          <div class="imgwrap">
+            <img src="images/makeTen.png" alt="Make Ten app">
+          </div>
+          <div class="sample-text">
+            <p>The Make10 app is a game in which the user is presented with 4 random numbers with which to make the number 10.</p>
+            <p>This was one of my first projects undertaken in Swift. Features include: a timer to record the time taken to complete the challenge, a random number generator, an option for custom number input, an option to pause the game (this will
+              hide the current game screen), 8 different operators and parentheses to manipulate the numbers, a 'Clear' button to remove all operators, a 'Check' button to check your answer, and persistence of data to track game statistics such as
+              total number of games, best time and longest streak.</p>
+            <p>Beyond this, I learnt about OOP, MVC, autolayout, gesture recognisers, and external libraries, which are highly transferrable concepts for use on many different platforms.</p>
+            <a href="https://github.com/DaughterOfMaple/Make10" target="_blank">See sample code on GitHub.</a>
+          </div>
+        </div>
+        <div class="code-sample image-right">
+          <div class="sample-text">
+            <p>The ExerciseWeather app provides short, high intensity workouts, based on a built-in library of exercises. When the user opens the app, it also fetches the weather data from a web service API and prompts the user to go outside if the
+              weather is nice.</p>
+            <p>It tracks the total number of workouts, current daily streak, and longest daily streak of the user, and saves them to a local SQL database.</p>
+            <p>The user is presented with a short, high intensity workout of randomly chosen exercises that they can start, stop, skip or reset, as well as local weather data.</p>
+            <p>Customisable settings include: location (city), exercise duration, rest duration, number of exercises to complete, and optional night mode.</p>
+            <p>For this project, new concepts included RESTful APIs, the MVVM design pattern, unit testing and SQLite local storage.</p>
+            <a href="https://github.com/DaughterOfMaple/ExerciseWeather" target="_blank">See sample code on GitHub.</a>
+          </div>
+          <div class="imgwrap">
+            <img src="images/exercise_display.png" alt="Exercise app home page">
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- History Section -->
     <section id="history">
       <div class="container-fluid">
-        <h1>What I have done</h1>
+        <h1>Formal qualifications</h1>
         <div class="timeline">
           <div class="timeline-item">
             <div class="timeline-point"></div>
@@ -297,10 +351,13 @@
       <div class="container-fluid">
         <h1>What next?</h1>
         <p>I must admit, I have a gentle obsession with learning new things.</p>
-        <p>In parallel with my 'official' studies, I have completed a number of programming courses on Udemy to help deepen my understanding of various topics, including OOP, web development, mobile app development in C# and Swift, clean coding and Unit Testing. For the most
-          part, I must give huge thanks to Dr Angela Yu (<a href="https://www.appbrewery.co/" title="The App Brewery">The App Brewery</a>) and Mosh Hamedani (<a href="https://codewithmosh.com/courses?affcode=146684_8qgz9mhy" title="Code with Mosh">Code
+        <p>In parallel with my 'official' studies, I have completed a number of programming courses on Udemy to help deepen my understanding of various topics, including OOP, web development, mobile app development in C# and Swift, clean coding and
+          Unit Testing. For the most
+          part, I must give huge thanks to Dr Angela Yu (<a href="https://www.appbrewery.co/" title="The App Brewery">The App Brewery</a>) and Mosh Hamedani (<a href="https://codewithmosh.com/courses?affcode=146684_8qgz9mhy"
+            title="Code with Mosh">Code
             with Mosh</a>) for their great teaching styles.</p>
-        <p>Next on my list to complete include: more advanced css, javascript and node.js concepts, unit testing with node.js, React Redux and TypeScript, algorithms and data structures. I'll also be working to integrate the concepts I've learnt into some fun new apps to share.</p>
+        <p>Next on my list to complete include: more advanced css, javascript and node.js concepts, unit testing with node.js, React Redux and TypeScript, algorithms and data structures. I'll also be working to integrate the concepts I've learnt into
+          some fun new apps to share.</p>
       </div>
     </section>
   </main>
